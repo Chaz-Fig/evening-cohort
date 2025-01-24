@@ -84,12 +84,31 @@
 
 //Exercise 3 
 
-const el = document.querySelector('#my-div');
- const input = document.querySelector('#input');
- const btn = document.querySelector ('#btn');
- btn.addEventListener('click', function(){
-  console.log(el)
-  el.style.backgroundColor = "red"
- })
+// const el = document.querySelector('#my-div');
+//  const input = document.querySelector('#input');
+//  const btn = document.querySelector ('#btn');
+//  btn.addEventListener('click', function(){
+//   console.log(el)
+//   el.style.backgroundColor = "red"
+//  })
 
 console.log("connected")
+
+//exercise 4
+
+let changepara = document.getElementById('changePara');
+let changebtn = document.getElementById('changebtn')
+btn.addEventListener('click', function(){
+  parseFloat.textContent = 'The text color has changed!';
+});
+
+//exerrcise 5
+
+const btn =  document.querySelector('#btn');
+
+btn.addEventListener("click", function(){
+  const li = document.querySelector('li');
+  const newItem = document.createElement('li');
+  li.appendChild(newItem)
+  newItem.textContent = 'Hey'
+})
