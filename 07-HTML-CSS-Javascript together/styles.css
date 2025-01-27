@@ -1,0 +1,30 @@
+/*exercise */
+button {
+   background-color: blue;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/*excercise light/darkmode */
+body.light-mode {
+   background-color: white;
+   color: black;
+ }
+ 
+ body.dark-mode {
+   background-color: black;
+   color: white;
+ }
+ 
+ .theme-button {
+   border: none;
+   padding: 10px 20px;
+   font-weight: bold;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 20px;
+ }
+
