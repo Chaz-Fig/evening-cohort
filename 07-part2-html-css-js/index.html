@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Toggle</title>
+    <style>
+        .notification-button {
+          border: none;
+          background-color: gray;
+          color: white;
+          padding: 10px 20px;
+          font-weight: bold;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+    
+        .enabled {
+          background-color: green;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Toggle Notifications</h1>
+      <button class="js-notification-toggle notification-button" onclick="toggleNotifications()">Enable Notifications</button>
+    
+      <script>
+        function toggleNotifications() {
+          const button = document.querySelector('.js-notification-toggle');
+    
+          if (button.classList.contains('enabled')) {
+            button.classList.remove('enabled');
+            button.innerHTML = 'Enable Notifications';
+          } else {
+            button.classList.add('enabled');
+            button.innerHTML = 'Disable Notifications';
+          }
+        }
+      </script>
+    </body>
+    </html>
